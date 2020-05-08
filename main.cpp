@@ -21,7 +21,7 @@ int main()
   list[1]=&bung;
   bangun_ruang_sisi_lancip *poin[1];
   poin[1]=&cut;
-
+    do {
 	int pilih;
 	char ulang;
 	system("cls");
@@ -42,12 +42,17 @@ int main()
 	        cout <<"maaf pilihan yang anda masukkan salah"<<endl;
 		getch();
 		}
-    
-	system("cls");
+    	cout << "apakaah ingin menghitung lagi ? "<<endl ;
+		cout << "Y/T"<<endl;
+		cout << " pilih : ";
+		cin >> ulang;	
+		system("cls");
+	}while(ulang=='Y'||ulang=='y');
 	cout << "Terima kasih telah menggunakan program saya untuk menghitung"<<endl<<endl;
 	getch ();
 	cout << "=============================="<<endl;	
 	cout << "Tatag Indah Larasati"<<endl;
 	cout << " D04217025"<<endl;
-        cout << "=============================="<<endl;	
+   	cout << "=============================="<<endl;	
+    	return 0;	
 }
